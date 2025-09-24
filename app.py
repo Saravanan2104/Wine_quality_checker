@@ -6,9 +6,7 @@ Backend: Saravanan
 """
 
 
-import numpy as np
 import pickle
-import pandas as pd
 from flask import Flask, request
 
 
@@ -72,4 +70,5 @@ def predict():
 
 
 if __name__=='__main__':
-    app.run(host='0.0.0.0',port=8000)
+    app.run(debug=True)
+
